@@ -20,9 +20,9 @@ setup(
     py_modules=["target_postgres"],
     install_requires=[
         "pipelinewise-singer-python==1.*",
-        "psycopg2-binary==2.9.5",
+        "psycopg2-binary>=2.9.11,<2.10",
         "inflection==0.3.1",
-        "joblib==1.2.0",
+        "joblib>=1.4,<2",
     ],
     extras_require={
         "test": [
